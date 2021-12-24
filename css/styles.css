@@ -849,7 +849,7 @@ header {
 .close-icon {
     cursor: pointer;
     position: absolute;
-    top: auto;
+    top: 50px;
     left: 50px;
     transform: translate(-50%, -50%);
     width: 11px;

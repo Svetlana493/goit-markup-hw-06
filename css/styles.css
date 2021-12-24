@@ -10,7 +10,7 @@
     --primary-button-bg-color: #f5f4fa;
     --primary-border-color: #ececec;
     --primary-icon-color: #afb1b8;
-    --animation-style: cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-style: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -147,7 +147,7 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    transition: color 250ms var(--animation-style);
+    transition: color var(--animation-style);
 }
 
 .item>.link:hover,
@@ -170,7 +170,7 @@ header {
     height: 12px;
     margin-right: 10px;
     fill: var(--primary-text-color);
-    transition: fill 250ms var(--animation-style);
+    transition: fill var(--animation-style);
 }
 
 .tel-icon {
@@ -178,14 +178,8 @@ header {
     height: 16px;
     margin-right: 10px;
     fill: var(--primary-text-color);
-    transition: fill 250ms var(--animation-style);
+    transition: fill var(--animation-style);
 }
-
-
-/* .contact-nav .mail-icon:hover,
-  .contact-nav .mail-icon:focus {
-    fill: var(--accent-color);
-  } */
 
 
 /* ТЕЛО */
@@ -225,6 +219,7 @@ header {
     text-align: center;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -237,7 +232,7 @@ header {
     margin: 0 auto;
     width: 200px;
     height: 50px;
-    transition: color 250ms var(--animation-style), background-color 250ms var(--animation-style);
+    transition: color var(--animation-style), background-color var(--animation-style);
 }
 
 .button:hover,
@@ -259,7 +254,7 @@ header {
     border: none;
     box-shadow: none;
     border-radius: 4px;
-    transition: color 250ms var(--animation-style), background-color 250ms var(--animation-style), box-shadow 250ms var(--animation-style);
+    transition: color var(--animation-style), background-color var(--animation-style), box-shadow var(--animation-style);
 }
 
 .portfolio-button:hover,
@@ -431,7 +426,7 @@ header {
     background-size: contain;
     border-radius: 50%;
     background-color: var(--primary-white-color);
-    transition: background-color 250ms var(--animation-style);
+    transition: background-color var(--animation-style);
 }
 
 .icon-team {
@@ -439,7 +434,7 @@ header {
     height: 20px;
     margin: 12px;
     fill: rgba(175, 177, 184, 1);
-    transition: fill 250ms var(--animation-style);
+    transition: fill var(--animation-style);
 }
 
 .colladge .item:not(:last-child) {
@@ -477,12 +472,12 @@ header {
     color: var(--primary-icon-color);
     box-sizing: border-box;
     border-radius: 4px;
-    transition: color 250ms var(--animation-style);
+    transition: color var(--animation-style);
 }
 
 .client-icon {
     fill: rgba(175, 177, 184, 1);
-    transition: fill 250ms var(--animation-style);
+    transition: fill var(--animation-style);
 }
 
 .client-icon.group1 {
@@ -565,6 +560,7 @@ header {
 
 .footer>.container {
     display: flex;
+    justify-content: center;
 }
 
 .conection {
@@ -617,7 +613,7 @@ header {
 /* Описание и расположение блока "Присоединяйтесь" */
 
 .join-us {
-    padding: 72px 0 100px 70px;
+    padding: 72px 0 100px 78px;
 }
 
 .join-us>.title {
@@ -641,7 +637,7 @@ header {
     display: flex;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms var(--animation-style);
+    transition: background-color var(--animation-style);
 }
 
 .icon-join {
@@ -654,6 +650,19 @@ header {
 .link-join:hover,
 .link-join:focus {
     background-color: var(--accent-color);
+}
+
+.subscribe-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--primary-white-color);
+    margin-left: 10px;
+    transition: fill var(--animation-style);
+}
+
+.subscribe-button:hover .subscribe-icon,
+.subscribe-button:focus .subscribe-icon {
+    fill: var(--accent-color);
 }
 
 
@@ -684,7 +693,7 @@ header {
     margin-right: 30px;
     margin-bottom: 30px;
     box-shadow: none;
-    transition: box-shadow 250ms var(--animation-style);
+    transition: box-shadow var(--animation-style);
 }
 
 .filter .item:nth-child(3n) {
@@ -737,7 +746,6 @@ header {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 2px solid tomato; */
 }
 
 .section.portfolio {
@@ -748,7 +756,6 @@ header {
     position: relative;
     overflow: hidden;
     display: inline-flex;
-    /* margin-bottom: 20px; */
 }
 
 .posters-text>.title {
@@ -771,7 +778,7 @@ header {
     left: 0;
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(calc(100% + 1px));
-    transition: transform 250ms var(--animation-style);
+    transition: transform var(--animation-style);
 }
 
 .posters .posters-descr-text {
@@ -786,7 +793,7 @@ header {
     line-height: 1.56;
     color: var(--primary-white-color);
     transform: translateY(100%);
-    transition: transform 250ms var(--animation-style);
+    transition: transform var(--animation-style);
 }
 
 .item .link:hover .posters::before,
@@ -811,6 +818,7 @@ header {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .modal {
@@ -825,14 +833,15 @@ header {
 
 .close-button {
     position: center;
+    top: 0;
+    right: 0;
     width: 30px;
     height: 30px;
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 50%;
-    display: inline-block;
-    margin-left: calc(100% - 38px);
+    margin-right: 8px;
     margin-top: 8px;
     padding: 0;
 }
@@ -840,14 +849,225 @@ header {
 .close-icon {
     cursor: pointer;
     position: absolute;
-    top: auto;
+    top: 50;
+    right: 50;
     transform: translate(-50%, -50%);
     width: 11px;
     height: 11px;
-    fill: #000000;
+    fill: var(--primary-black-color);
+}
+
+.close-button:hover,
+.close-button:focus {
+    cursor: pointer;
 }
 
 .close-button:hover .close-icon,
 .close-button:focus .close-icon {
     fill: var(--accent-color);
+    transition: fill var(--animation-style);
+}
+
+textarea {
+    resize: none;
+}
+
+.form {
+    padding: 40px 39px 40px 41px;
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--title-text-color);
+    margin-bottom: 12px;
+}
+
+.form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.comment-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.comment-field .comment-field-text,
+.form-field .form-field-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+    margin-bottom: 4px;
+}
+
+.comment-field .comment {
+    padding: 12px 16px;
+}
+
+.comment-field textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+}
+
+.comment-field textarea:focus {
+    border-color: var(--accent-color);
+    transition: border-color var(--animation-style);
+}
+
+.comment-field textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field input {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: none;
+}
+
+.name-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-top: 29px;
+    margin-left: 12px;
+    fill: var(--primary-black-color);
+}
+
+.form-field input:focus {
+    border-color: var(--accent-color);
+    transition: border-color var(--animation-style);
+}
+
+.form-field input:focus+.name-icon {
+    fill: var(--accent-color);
+    transition: fill var(--animation-style);
+}
+
+.agree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.agree .agree-text {
+    line-height: 1.71;
+    color: var(--primary-text-color);
+}
+
+.agree .agree-icon {
+    display: inline-flex;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.agree .checkbox:checked+.agree-icon {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    background-image: url('../images/check.svg#check-icon');
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.agree .checkbox {
+    appearance: none;
+}
+
+.agree-icon+.agree-text {
+    margin-left: 7px;
+}
+
+.agree a {
+    color: var(--accent-color);
+}
+
+.form .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form .button:hover,
+.form .button:focus {
+    color: var(--primary-white-color);
+    background-color: #188ce8;
+    transition: background-color var(--animation-style);
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    padding-top: 72px;
+    padding-left: 93px;
+}
+
+.subscribe .title {
+    margin-bottom: 20px;
+}
+
+.subscribe-field {
+    display: inline-flex;
+}
+
+.subscribe-field .sub-label+.subscribe-button {
+    margin-left: 12px;
+}
+
+.subscribe-button-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email {
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: transparent;
+    color: var(--primary-white-color);
+    outline: none;
+}
+
+.email:focus {
+    border-color: var(--accent-color);
+    transition: border-color var(--animation-style);
+}
+
+.subscribe-field::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
 }

@@ -832,9 +832,9 @@ header {
 }
 
 .close-button {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: center;
+    top: auto;
+    right: 100%;
     width: 30px;
     height: 30px;
     background: #ffffff;
@@ -847,7 +847,7 @@ header {
 }
 
 .close-icon {
-    position: center;
+    position: absolute;
     top: 50;
     right: 50;
     transform: translate(-50%, -50%);

@@ -481,9 +481,9 @@ header {
 }
 
 .client-icon.group1 {
-    width: 106px;
-    height: 60px;
-    margin: 14px 38px;
+    width: 41px;
+    height: 46.7px;
+    margin: 23px 65px;
 }
 
 .client .client-border:hover,
@@ -497,9 +497,9 @@ header {
 }
 
 .client-icon.group2 {
-    width: 106px;
-    height: 60px;
-    margin: 14px 38px;
+    width: 40px;
+    height: 52px;
+    margin: 20px 65px;
 }
 
 .client .client-border:hover .client-icon.group2,
@@ -508,9 +508,9 @@ header {
 }
 
 .client-icon.group3 {
-    width: 106px;
-    height: 60px;
-    margin: 14px 38px;
+    width: 43px;
+    height: 41px;
+    margin: 25px 63px;
 }
 
 .client .client-border:hover .client-icon.group3,
@@ -519,9 +519,9 @@ header {
 }
 
 .client-icon.group4 {
-    width: 106px;
-    height: 60px;
-    margin: 14px 38px;
+    width: 84px;
+    height: 40px;
+    margin: 25px 43px;
 }
 
 .client .client-border:hover .client-icon.group4,
@@ -530,9 +530,9 @@ header {
 }
 
 .client-icon.group5 {
-    width: 106px;
-    height: 60px;
-    margin: 14px 38px;
+    width: 62px;
+    height: 45px;
+    margin: 23px 54px;
 }
 
 .client .client-border:hover .client-icon.group5,
@@ -541,9 +541,9 @@ header {
 }
 
 .client-icon.group6 {
-    width: 106px;
-    height: 60px;
-    margin: 14px 38px;
+    width: 94px;
+    height: 44px;
+    margin: 24px 38px;
 }
 
 .client .client-border:hover .client-icon.group6,
@@ -832,7 +832,7 @@ header {
 }
 
 .close-button {
-    position: center;
+    position: absolute;
     top: 0;
     right: 0;
     width: 30px;
@@ -847,10 +847,9 @@ header {
 }
 
 .close-icon {
-    cursor: pointer;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 50;
+    right: 50;
     transform: translate(-50%, -50%);
     width: 11px;
     height: 11px;

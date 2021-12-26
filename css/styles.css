@@ -833,7 +833,8 @@ header {
 
 .close-button {
     position: center;
-    top: auto;
+    top: 50;
+    right: 50;
     right: 100%;
     width: 30px;
     height: 30px;

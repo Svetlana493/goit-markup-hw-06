@@ -832,7 +832,7 @@ header {
 }
 
 .close-button {
-    position: center;
+    position: absolute;
     top: 0;
     right: 0;
     width: 30px;

@@ -942,8 +942,8 @@ textarea {
     position: absolute;
     margin: 0px;
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
     margin-top: 29px;
     margin-left: 12px;
     fill: var(--primary-black-color);

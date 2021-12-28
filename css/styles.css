@@ -994,7 +994,7 @@ textarea {
 }
 
 .icon-check-mark+.icon-check-mark-text {
-    margin-left: 7px;
+    top: 7px;
 }
 
 .icon-check-mark a {

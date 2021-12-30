@@ -1002,8 +1002,10 @@ textarea {
 
 .form .button {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 712px;
 }
 
 .form .button:hover,

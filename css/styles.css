@@ -230,9 +230,10 @@ header {
     border-radius: 4px;
     padding: 10px 30px;
     margin: 0 auto;
+    top: 30px;
     width: 200px;
     height: 50px;
-    transition: color var(--animation-style), background-color var(--animation-style);
+    transition: color var(--accent-style), background-color var(--accent-style);
 }
 
 .button:hover,
@@ -1002,10 +1003,8 @@ textarea {
 
 .form .button {
     display: block;
-    width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 712px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form .button:hover,

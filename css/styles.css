@@ -1099,3 +1099,13 @@ textarea {
     align-items: center;
     color: rgba(255, 255, 255, 0.6);
 }
+
+.agree {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 8px;
+}
